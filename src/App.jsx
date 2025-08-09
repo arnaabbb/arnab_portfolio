@@ -1,16 +1,16 @@
-import './App.css';
-import Header from './components/layout/Header';
-import About from './components/others/About';
-import Hero from './components/others/Hero';
+import './App.css'
+import Header from './components/layout/Header'
+import Hero from './components/others/Hero'
+import About from './components/others/About'
 
 function App() {
   return (
-   <>
-    <Header/>
-    <Hero/>
-    <About/>
-   </>
-  );
+    <>
+      <Header />
+      <Hero />
+      <About />
+    </>
+  )
 }
 
-export default App;
+export default App
