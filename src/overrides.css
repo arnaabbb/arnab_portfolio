@@ -1,0 +1,44 @@
+/* ===================================
+   TEMPLATE OVERRIDE STYLES
+   =================================== */
+
+/*
+ * FIX 1: Make all "animated" content visible.
+ */
+.ftco-animate {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/*
+ * FIX 2: Correct the main page layout.
+ * This adds padding to the top of the hero section to push it down below the floating navbar.
+ */
+#home-section {
+  padding-top: 120px; /* Adjust this value as needed */
+}
+
+/*
+ * FIX 3: Ensure proper text color contrast.
+ */
+body {
+  background: #000;
+  color: #fff;
+}
+
+.hero .text h1,
+.hero .text h2,
+.hero .text .subheading {
+  color: #fff !important;
+}
+
+.ftco-about {
+  background: #111; /* Give the About section a background to see it */
+}
+
+.ftco-about .heading-section h1,
+.ftco-about .heading-section h2,
+.ftco-about .about-info li span,
+.ftco-about p {
+  color: #fff !important;
+}
