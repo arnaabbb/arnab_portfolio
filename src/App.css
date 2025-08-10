@@ -9194,14 +9194,15 @@ textarea.form-control {
     top: 0px;
     left: 0;
     font-size: 7vw;
-    color: rgba(255, 255, 255, 0.1);
-    z-index: -1;
-    font-weight: 900; }
+    color: rgba(255, 255, 255, 0.2);
+    z-index: -1; /* Change this value to -1 */
+    font-weight: 900;}
     .heading-section h1.big.big-2 {
       right: 0; }
   .heading-section h2 {
     font-size: 50px;
-    font-weight: 700; }
+    font-weight: 700;
+     color: rgba(255, 255, 255, 0.8); }
     .heading-section h2 span {
       font-weight: 400; }
     @media (max-width: 767.98px) {
@@ -9682,3 +9683,186 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+/* FINAL FOOTER FIX: Add this to the end of app.css */
+
+/* This rule makes the "About Me" and "Contact Me" titles visible */
+.ftco-footer .ftco-heading-2 {
+    color: #fff !important; /* Use !important to force the override */
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+/* Add this to the end of app.css for the new icons */
+
+.ftco-footer-social li a {
+  height: 50px;
+  width: 50px;
+  display: flex;          /* Use flexbox for perfect centering */
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  color: #fff;             /* Icon color */
+  font-size: 22px;        /* Icon size */
+  transition: all 0.3s ease;
+}
+
+.ftco-footer-social li a:hover {
+  background: #ffbd39;    /* Your theme's primary yellow color */
+  color: #000;
+}
+/* Individual Icon Brand Colors on Hover */
+
+/* GitHub */
+.ftco-footer-social li a.github:hover {
+  background: #181717; /* GitHub Black */
+  color: #fff;
+}
+
+/* LinkedIn */
+.ftco-footer-social li a.linkedin:hover {
+  background: #0077b5; /* LinkedIn Blue */
+  color: #fff;
+}
+
+/* Instagram */
+.ftco-footer-social li a.instagram:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  color: #fff;
+}
+
+/* Email */
+.ftco-footer-social li a.email:hover {
+  background: #D44638; /* A common red for email/Gmail */
+  color: #fff;
+}
+
+/* Phone */
+.ftco-footer-social li a.phone:hover {
+  background: #25d366; /* A common green for phone/WhatsApp */
+  color: #fff;
+}
+/* =================================== */
+/* FINAL ICON STYLES                   */
+/* =================================== */
+
+/* Base style for all social icons in the footer */
+.ftco-footer-social li a {
+  background: #222; /* A neutral dark grey background for the circle */
+  transition: all 0.3s ease;
+}
+
+/* --- Initial Brand Colors for Each Icon --- */
+
+.ftco-footer-social li a.github { color: #fff; } /* GitHub is often white on dark */
+.ftco-footer-social li a.linkedin { color: #0077b5; } /* LinkedIn Blue */
+.ftco-footer-social li a.instagram { color: #E4405F; } /* Instagram Pink */
+.ftco-footer-social li a.email { color: #D44638; } /* Gmail Red */
+.ftco-footer-social li a.phone { color: #25D366; } /* Phone/WhatsApp Green */
+
+
+/* --- Hover Effects for Each Icon --- */
+
+.ftco-footer-social li a.github:hover {
+  background: #fff;
+  color: #181717; /* Invert colors on hover */
+}
+
+.ftco-footer-social li a.linkedin:hover {
+  background: #0077b5;
+  color: #fff;
+}
+
+.ftco-footer-social li a.instagram:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  color: #fff;
+}
+
+.ftco-footer-social li a.email:hover {
+  background: #D44638;
+  color: #fff;
+}
+
+.ftco-footer-social li a.phone:hover {
+  background: #25D366;
+  color: #fff;
+}
+/* Add this to the end of app.css to fix alignment */
+
+/*
+  This forces Bootstrap columns within a flex row
+  to have their direct children (the resume cards)
+  stretch to the same height.
+*/
+.row.d-flex > div[class*="col-"] {
+  display: flex;
+  flex-direction: column;
+}
+
+.row.d-flex > div[class*="col-"] > .resume-wrap {
+  flex-grow: 1;
+}
+/* Add this to the end of app.css */
+
+/* Sticky Footer Layout */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the container is at least as tall as the screen */
+}
+
+.content-wrap {
+  flex-grow: 1; /* Allows this element to grow and push the footer down */
+}
+/* =================================== */
+/* FINAL UNIFIED CARD STYLING          */
+/* (For Resume, Certs, and Projects)   */
+/* =================================== */
+
+/* This styles the boxes for Resume, Certifications, and Projects */
+.resume-wrap,
+.project-wrap {
+  background: #232323; /* Dark grey background */
+  width: 100%;
+  padding: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* This styles the main title/header of each card */
+.resume-wrap h2,
+.project-wrap h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffbd39; /* Yellow color for the title */
+}
+
+.project-wrap a {
+    color: inherit; /* Makes the link color match the h3 */
+    text-decoration: none; /* Removes underline */
+}
+
+/* This styles the sub-heading (like the university name) */
+.resume-wrap .position {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* This styles the main description text */
+.resume-wrap p,
+.project-wrap .description {
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 1rem;
+}
+
+/* This is the final alignment fix for all grids */
+.row.d-flex > div[class*="col-"] {
+  display: flex;
+}
+
+.row.d-flex > div[class*="col-"] > .resume-wrap,
+.row.d-flex > div[class*="col-"] > .project-wrap {
+  flex-grow: 1;
+}
