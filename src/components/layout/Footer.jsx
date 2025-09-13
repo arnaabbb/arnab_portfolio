@@ -10,7 +10,7 @@ export default function Footer() {
         {/* ... all your other footer content ... */}
         <div className="row mb-5 justify-content-center">
           <div className="col-md-8 text-center">
-            <h2 className="ftco-heading-2">About Me</h2>
+            <h2 className="ftco-heading-2">ABOUT ME</h2>
             <p>
               A passionate M.Sc. Data Science student focused on building intelligent systems. 
               I thrive on transforming complex data into actionable insights and creating impactful solutions.
@@ -25,10 +25,10 @@ export default function Footer() {
         <div className="row">
           <div className="col-md-12 text-center">
             <ul className="ftco-footer-social list-unstyled">
-              <li><a href="https://github.com/ARNAB-BOT" className="github" target="_blank" rel="noopener noreferrer"><FaGithub /></a></li>
-              <li><a href="#" className="linkedin" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a></li>
-              <li><a href="#" className="instagram" target="_blank" rel="noopener noreferrer"><FaInstagram /></a></li>
-              <li><a href="mailto:arnabmondal13082002@gmail.com" className="email"><MdEmail /></a></li>
+              <li><a href="https://github.com/arnaabbb" className="github" target="_blank" rel="noopener noreferrer"><FaGithub /></a></li>
+              <li><a href="https://www.linkedin.com/in/arnab-mondal-b5365b213/" className="linkedin" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a></li>
+              <li><a href="https://www.instagram.com/_beyond.arnab_" className="instagram" target="_blank" rel="noopener noreferrer"><FaInstagram /></a></li>
+              <li><a href="mailto:arnabmondal1308@gmail.com" className="email"><MdEmail /></a></li>
               <li><a href="tel://+918001339822" className="phone"><MdPhone /></a></li>
             </ul>
             <p style={{ marginTop: '50px' }}>

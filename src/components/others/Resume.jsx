@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 // Data for the resume section
 const educationDetails = [
   {
@@ -45,7 +46,7 @@ export default function Resume() {
         {/* Main Section Title */}
         <div className="row justify-content-center pb-5">
           <div className="col-md-12 heading-section text-center">
-            <h2 className="mb-4">Resume</h2>
+            <h2 className="mb-4">EDUCATION</h2>
           </div>
         </div>
 
@@ -56,7 +57,7 @@ export default function Resume() {
               <span className="date">{educationDetails[0].year}</span>
               <h2>{educationDetails[0].degree}</h2>
               <span className="position">{educationDetails[0].institution}</span>
-              <p className="mt-4">{educationDetails.description}</p>
+              <p className="mt-4">{educationDetails[0].description}</p>
             </div>
           </div>
           <div className="col-md-6">
@@ -69,40 +70,31 @@ export default function Resume() {
           </div>
         </div>
 
-        {/* --- CERTIFICATIONS SUBHEADING --- */}
-        <div className="row justify-content-center mt-5 pb-3">
-          <div className="col-md-12 heading-section text-center">
-            <h3 style={{fontWeight: '700'}}>Certifications</h3>
+    {/* --- CERTIFICATIONS SUBHEADING --- */}
+    <div className="row justify-content-center mt-5 pb-3">
+      <div className="col-md-12 heading-section text-center">
+        <h2 className="mb-4">CERTIFICATIONS</h2>
+      </div>
+    </div>
+
+    {/* --- CERTIFICATIONS ROW (same as Education) --- */}
+    <div className="row d-flex">
+      {certificationDetails.map((cert, index) => (
+        <div key={index} className="col-12 col-md-6">
+          <div className="resume-wrap">
+            <span className="date">{cert.year}</span>
+            {/* Make link text inherit the same color/size as Education */}
+            <a href={cert.link} target="_blank" rel="noopener noreferrer">
+              <h2 className="m-0">{cert.name}</h2>
+            </a>
+            {/* Add or omit .position to match Education usage */}
+            {/* <span className="position">{cert.issuer}</span> */}
+            <p className="mt-4">{cert.description}</p>
           </div>
         </div>
-        
-        {/* --- CERTIFICATIONS ROW WITH DYNAMIC LOGIC --- */}
-        <div className="row d-flex">
-          {certificationDetails.map((cert, index) => {
-            const isLastItem = index === certificationDetails.length - 1;
-            const isOddTotal = certificationDetails.length % 2 !== 0;
-            const colClass = isLastItem && isOddTotal ? 'col-md-12' : 'col-md-6';
-
-            return (
-              <div key={index} className={colClass}>
-                <div className="resume-wrap">
-                  <span className="date">{cert.year}</span>
-                  <a href={cert.link} target="_blank" rel="noopener noreferrer">
-                    <h2>{cert.name}</h2>
-                  </a>
-                  <p className="mt-4">{cert.description}</p>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-
-        {/* Download CV Button */}
-        <div className="row justify-content-center mt-5">
-          <div className="col-md-6 text-center">
-            <p><a href="/Arnab_Mondal.pdf" download className="btn btn-primary py-4 px-5">Download CV</a></p>
-          </div>
-        </div>
+      ))}
+    </div>
+    
       </div>
     </section>
   );

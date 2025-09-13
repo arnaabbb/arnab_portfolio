@@ -9866,3 +9866,20 @@ textarea.form-control {
 .row.d-flex > div[class*="col-"] > .project-wrap {
   flex-grow: 1;
 }
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  align-items: stretch;           /* equal heights when possible */
+}
+
+.cert-card { height: 100%; }
+
+.cert-card:last-child {           /* critical: remove any spanning */
+  grid-column: auto !important;
+}
+
+/* Mobile: stack */
+@media (max-width: 768px) {
+  .cert-grid { grid-template-columns: 1fr; }
+}

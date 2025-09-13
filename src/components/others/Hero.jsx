@@ -1,62 +1,123 @@
-import React from 'react';
-// 1. Import the Link component for smooth scrolling
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-scroll';
+import cv from './../../assets/Arnab_Mondal.pdf';
+import MyImage from '../../../public/images/self.refined.jpg'
+import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 
 export default function Hero() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
   return (
     <section id="home-section" className="hero">
-      <div className="home-slider">
-        <div className="container" style={{ maxWidth: '100%', padding: 0 }}>
-          <div className="row no-gutters slider-text align-items-center">
+      {/* Animated background elements */}
+      <div className="hero-bg-elements">
+        <div className="floating-shape shape-1"></div>
+        <div className="floating-shape shape-2"></div>
+        <div className="floating-shape shape-3"></div>
+      </div>
 
-            {/* --- 1. IMAGE (Left Column) --- */}
-            <div
-              className="one-third img"
-              style={{
-                backgroundImage: 'url(/images/img1.jpg)', // Ensure this image is in your public/images folder
-                minHeight: '100vh',
-                width: '50%',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center center'
-              }}
-            />
+      <div className="container-fluid">
+        <div className="row no-gutters align-items-center min-vh-100">
 
-            {/* --- 2. TEXT (Right Column) --- */}
-            <div
-              className="one-forth d-flex align-items-center ftco-animate"
+          {/* Left Column - Enhanced Image Section - Now visible on mobile */}
+          <div className="col-12 col-md-6 hero-image-section">
+            <div 
+              className="hero-image-container"
               style={{
-                width: '50%',
-                justifyContent: 'center'
+                backgroundImage: `url(${MyImage})`,
+                minHeight: "50vh", // Reduced from 100vh
+                backgroundSize: "cover",
+                backgroundPosition: "center center"
               }}
             >
-              <div className="text">
-                <span className="subheading">Hello!</span>
-                <h1 className="mb-4 mt-3"><span>Arnab Mondal</span></h1>
-                <h2 className="mb-4">Aspiring AI/ML Student</h2>
-                <p className="mb-0">
-                  {/* --- THIS IS THE FIX --- */}
-                  {/* The <a> tags are now <Link> components with smooth scroll props */}
-                  <Link 
-                    to="contact-section" 
-                    smooth={true} 
-                    duration={500} 
-                    className="btn btn-primary py-3 px-4"
-                  >
-                    Hire me
-                  </Link>
-                  <Link 
-                    to="projects-section" 
-                    smooth={true} 
-                    duration={500} 
-                    className="btn btn-white btn-outline-white py-3 px-4"
-                  >
-                    My works
-                  </Link>
-                </p>
+              <div className="image-overlay"></div>
+              <div className="image-content">
+                <div className="social-links">
+                  <a href="https://www.linkedin.com/in/arnab-mondal-b5365b213/" className="social-link" aria-label="LinkedIn">
+                    <FaLinkedin />
+                  </a>
+                  <a href="https://github.com/arnaabbb" className="social-link" aria-label="GitHub">
+                    <FaGithub />
+                  </a>
+                  <a href="https://www.instagram.com/_beyond.arnab_" className="social-link" aria-label="Instagram">
+                    <FaInstagram />
+                  </a>
+                </div>
               </div>
             </div>
-
           </div>
+
+          {/* Right Column - Enhanced Text Content */}
+          <div className="col-12 col-md-6 d-flex align-items-center hero-text-section">
+            <div className={`hero-content p-5 ${isVisible ? 'animate-in' : ''}`}>
+              <div className="hero-badge">
+                <span className="badge-text">Available for work</span>
+                <div className="badge-dot"></div>
+              </div>
+              
+              <span className="subheading hero-greeting">Hello! I'm</span>
+              
+              <h1 className="hero-title mb-4 mt-3">
+                <span className="name-highlight">Arnab Mondal</span>
+              </h1>
+              
+              <h2 className="hero-subtitle mb-4">
+                <span className="typing-text">Aspiring AI/ML Student</span>
+              </h2>
+              
+              <p className="hero-description mb-4">
+                I create beautiful, responsive websites and web applications that deliver exceptional user experiences. Let's bring your ideas to life!
+              </p>
+
+              <div className="hero-stats mb-4">
+                <div className="stat-item">
+                  <span className="stat-number">0+</span>
+                  <span className="stat-label">Projects</span>
+                </div>
+                <div className="stat-item">
+                  <span className="stat-number">0+</span>
+                  <span className="stat-label">Years</span>
+                </div>
+                <div className="stat-item">
+                  <span className="stat-number">100%</span>
+                  <span className="stat-label">Satisfaction</span>
+                </div>
+              </div>
+              
+              <div className="hero-buttons">
+                <Link 
+                  to="contact" 
+                  className="btn btn-primary hero-btn-primary"
+                  smooth={true}
+                  duration={500}
+                >
+                  <span>Hire me</span>
+                  <i className="fas fa-arrow-right"></i>
+                </Link>
+                <Link 
+                  to="projects" 
+                  className="btn btn-outline hero-btn-secondary"
+                  smooth={true}
+                  duration={500}
+                >
+                  <span>View my work</span>
+                  <i className="fas fa-external-link-alt"></i>
+                </Link>
+              </div>
+
+              <div className="hero-scroll-indicator">
+                <div className="scroll-text">Scroll down</div>
+                <div className="scroll-arrow">
+                  <i className="fas fa-chevron-down"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>

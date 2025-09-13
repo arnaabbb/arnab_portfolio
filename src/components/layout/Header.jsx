@@ -23,7 +23,7 @@ export default function Header() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
       <div className="container">
-        <a className="navbar-brand" href="index.html">Portfolio</a>
+        <a className="navbar-brand" href="index.html">PORTFOLIO</a>
         <button 
           className="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" 
           type="button" 
@@ -32,26 +32,26 @@ export default function Header() {
           aria-expanded={isOpen} 
           aria-label="Toggle navigation"
         >
-          <span className="oi oi-menu"></span> Menu
+          <span className="oi oi-menu"></span> MENU
         </button>
 
         <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="ftco-nav">
           <ul className="navbar-nav nav ml-auto">
             {/* The offset prop has been REMOVED. CSS now handles the positioning. */}
             <li className="nav-item">
-              <Link to="home-section" smooth={true} duration={500} className="nav-link" onClick={() => setIsOpen(false)}><span>Home</span></Link>
+              <Link to="home-section" smooth={true} duration={500} className="nav-link" onClick={() => setIsOpen(false)}><span>HOME</span></Link>
             </li>
             <li className="nav-item">
-              <Link to="resume-section" smooth={true} duration={500} className="nav-link" onClick={() => setIsOpen(false)}><span>Resume</span></Link>
+              <Link to="resume-section" smooth={true} duration={500} className="nav-link" onClick={() => setIsOpen(false)}><span>EDUCATION</span></Link>
             </li>
             <li className="nav-item">
-              <Link to="projects-section" smooth={true} duration={500} className="nav-link" onClick={() => setIsOpen(false)}><span>Projects</span></Link>
+              <Link to="projects-section" smooth={true} duration={500} className="nav-link" onClick={() => setIsOpen(false)}><span>PROJECTS</span></Link>
             </li>
             <li className="nav-item">
-              <Link to="contact-section" smooth={true} duration={500} className="nav-link" onClick={() => setIsOpen(false)}><span>About</span></Link>
+              <Link to="contact-section" smooth={true} duration={500} className="nav-link" onClick={() => setIsOpen(false)}><span>ABOUT</span></Link>
             </li>
             <li className="nav-item">
-              <Link to="contact-section" smooth={true} duration={500} className="nav-link" onClick={() => setIsOpen(false)}><span>Contact</span></Link>
+              <Link to="contact-section" smooth={true} duration={500} className="nav-link" onClick={() => setIsOpen(false)}><span>CONTACT</span></Link>
             </li>
           </ul>
         </div>
