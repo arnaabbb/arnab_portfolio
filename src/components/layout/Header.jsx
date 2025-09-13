@@ -23,7 +23,7 @@ export default function Header() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
       <div className="container">
-        <a className="navbar-brand" href="index.html">PORTFOLIO</a>
+        <a className="navbar-brand" href="index.html">ARNAB</a>
         <button 
           className="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" 
           type="button" 

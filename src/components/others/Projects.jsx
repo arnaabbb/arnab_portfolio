@@ -4,12 +4,12 @@ const projectData = [
   {
     title: "Abnormal Human Behavior Detection (Ongoing)",
     description: "Currently developing a real-time surveillance system to identify abnormal human behaviors from video feeds using the YOLO object detection model.",
-    githubLink: "#" // <-- Add your link
+    //githubLink: "#" // <-- Add your link
   },
   {
     title: "Low-Light License Plate Detection (Ongoing)",
     description: "Created an advanced system to detect license plates in low-light conditions by integrating YOLO for object detection and GANs for image enhancement.",
-    githubLink: "#" // <-- Add your link
+    //githubLink: "#" // <-- Add your link
   },
   {
     title: "NetOCR: A Lightweight OCR Model",
