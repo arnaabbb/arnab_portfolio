@@ -7,7 +7,7 @@ const educationDetails = [
     year: "July 2024 – Present",
     degree: "M.Sc. in Data Science",
     institution: "Vellore Institute of Technology, Vellore",
-    description: "GPA: 8.19/10.0. Coursework includes Statistics, Exploratory Data Analysis, and AI/ML."
+    description: "GPA: 8.15/10.0. Coursework includes Statistics, Exploratory Data Analysis, and AI/ML."
   },
   {
     year: "Oct 2021 – July 2024",
@@ -23,19 +23,25 @@ const certificationDetails = [
     year: "July 2024",
     name: "Management Information Systems",
     description: "Gained understanding of MIS, including hardware, software, databases, and strategic applications.",
-    link: "#" // <-- REPLACE WITH YOUR LINK
+    link: "https://learn.saylor.org/pluginfile.php/1/tool_certificate/issues/1720103635/2622459019AM.pdf" // <-- REPLACE WITH YOUR LINK
   },
   {
     year: "May 2024",
     name: "Career Essentials in Generative AI",
     description: "Learned core Generative AI concepts, applications, and ethical best practices.",
-    link: "#" // <-- REPLACE WITH YOUR LINK
+    link: "https://www.linkedin.com/learning/certificates/3f08438cd1a51eac47369dd96a2ddf1d0798d6ba9f43b354edc2feaececc2d20" // <-- REPLACE WITH YOUR LINK
   },
   {
     year: "Nov 2023",
     name: "Web Development",
     description: "Acquired knowledge of front-end and back-end technologies and web development practices.",
-    link: "#" // <-- REPLACE WITH YOUR LINK
+    link: "https://trainings.internshala.com/s/v/3180543/19a7e67f" // <-- REPLACE WITH YOUR LINK
+  },
+  {
+    year: "May 2023",
+    name: "Project Management",
+    description: "Learned about the project lifecycle from initiation through closure using foundational tools and techniques for effective project delivery",
+    link: "https://learn.saylor.org/pluginfile.php/1/tool_certificate/issues/1685158050/6140904836AM.pdf" // <-- REPLACE WITH YOUR LINK
   }
 ];
 

@@ -50,9 +50,6 @@ export default function Header() {
             <li className="nav-item">
               <Link to="contact-section" smooth={true} duration={500} className="nav-link" onClick={() => setIsOpen(false)}><span>ABOUT</span></Link>
             </li>
-            <li className="nav-item">
-              <Link to="contact-section" smooth={true} duration={500} className="nav-link" onClick={() => setIsOpen(false)}><span>CONTACT</span></Link>
-            </li>
           </ul>
         </div>
       </div>

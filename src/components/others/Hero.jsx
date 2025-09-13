@@ -66,40 +66,25 @@ export default function Hero() {
               </h1>
               
               <h2 className="hero-subtitle mb-4">
-                <span className="typing-text">Aspiring AI/ML Student</span>
+                <span className="typing-text">AI/ML Explorer</span>
               </h2>
               
               <p className="hero-description mb-4">
-                I create beautiful, responsive websites and web applications that deliver exceptional user experiences. Let's bring your ideas to life!
+                A Data Science student with a strong interest in machine learning and AI. I enjoy exploring how data-driven solutions can solve real-world challenges across different domains.
               </p>
 
-              <div className="hero-stats mb-4">
-                <div className="stat-item">
-                  <span className="stat-number">0+</span>
-                  <span className="stat-label">Projects</span>
-                </div>
-                <div className="stat-item">
-                  <span className="stat-number">0+</span>
-                  <span className="stat-label">Years</span>
-                </div>
-                <div className="stat-item">
-                  <span className="stat-number">100%</span>
-                  <span className="stat-label">Satisfaction</span>
-                </div>
-              </div>
-              
               <div className="hero-buttons">
                 <Link 
-                  to="contact" 
+                  to="contact-section" 
                   className="btn btn-primary hero-btn-primary"
                   smooth={true}
                   duration={500}
                 >
-                  <span>Hire me</span>
+                  <span>Contact me</span>
                   <i className="fas fa-arrow-right"></i>
                 </Link>
                 <Link 
-                  to="projects" 
+                  to="projects-section" 
                   className="btn btn-outline hero-btn-secondary"
                   smooth={true}
                   duration={500}

@@ -7,24 +7,24 @@ const projectData = [
     githubLink: "#" // <-- Add your link
   },
   {
-    title: "Low-Light License Plate Detection",
+    title: "Low-Light License Plate Detection (Ongoing)",
     description: "Created an advanced system to detect license plates in low-light conditions by integrating YOLO for object detection and GANs for image enhancement.",
     githubLink: "#" // <-- Add your link
   },
   {
     title: "NetOCR: A Lightweight OCR Model",
     description: "Developed a lightweight OCR system using CNNs for accurate character recognition and benchmarked its performance against finetuned ResNet18 model.",
-    githubLink: "#" // <-- Add your link
+    githubLink: "https://github.com/arnaabbb/Custom-OCR" // <-- Add your link
   },
   {
     title: "Context-Aware Spell Checker",
     description: "Developed a real-time, context-aware spell checker using advanced NLP techniques like N-gram modeling and Levenshtein distance.",
-    githubLink: "#" // <-- Add your link
+    githubLink: "https://github.com/arnaabbb/Autochecker" // <-- Add your link
   },
   {
     title: "Desktop Voice Assistant",
     description: "Engineered a versatile desktop voice assistant using Python's speech recognition and text-to-speech libraries to perform various automated tasks.",
-    githubLink: "#" // <-- Add your link
+    githubLink: "https://github.com/arnaabbb/Desktop-Voice-Assistant" // <-- Add your link
   }
 ];
 
