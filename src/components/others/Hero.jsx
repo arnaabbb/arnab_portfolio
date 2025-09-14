@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-scroll';
-import cv from './../../assets/Arnab_Mondal.pdf';
+import cv from './../../assets/Arnab_Mondal_resume.pdf';
 import MyImage from '../../../public/images/self.refined.jpg'
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 
@@ -92,6 +92,16 @@ export default function Hero() {
                   <span>View my work</span>
                   <i className="fas fa-external-link-alt"></i>
                 </Link>
+                {/* ✅ Use <a> instead of react-scroll Link */}
+                  <a 
+                    href={cv} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="btn btn-outline hero-btn-secondary"
+                  >
+                    <span>Download CV</span>
+                    <i className="fas fa-external-link-alt"></i>
+                  </a>
               </div>
 
               <div className="hero-scroll-indicator">
